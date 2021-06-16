@@ -68,8 +68,8 @@ copy Public address of the key ใส่ใน docker-compose.yaml ในบร�
 |Check IP Peers     | > admin.peers                                                         |
 |Add Peers Static   | > admin.addPeer("enode://a979fb575495b8d6db44f75@52.16.188.185:30303")|
 |Check NodeInfo     | > admin.nodeInfo                                                      |
-|Add Singer         | > clique.propose("0xd882a28E73223d1623E0d5afd3942eA1c0B6ffF8", true)  |
-|Remoce Signer      | > clique.propose("0xd882a28E73223d1623E0d5afd3942eA1c0B6ffF8", false) |
+|Add Singer         | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", true)  |
+|Remoce Signer      | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", false) |
 
 1 command-line
 ```
