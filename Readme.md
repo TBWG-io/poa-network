@@ -16,6 +16,7 @@
 |---------------|-------------------|
 |docker         | 20.10.6 or higher |
 |docker-compose | 1.29.1 or higher  |
+|geth  | ethereum/client-go:v1.10.3 |
 
 # Install docker and docker-compose
 ```
@@ -75,8 +76,15 @@ copy Public address of the key ใส่ใน docker-compose.yaml ในบร�
 ```
 # docker exec -it TBWG-NODE-00 geth --datadir /poa/node attach --exec 'admin.nodeInfo'
 ```
-
-
+# หากต้องการ reset data เพื่อทำการ join ใหม่
+## 7. removedb
+```
+# ./remove-db.sh
+```
+และให้ทำการ init genesis ใหม่อีกครั้งก่อนการ deploy
+```
+# ./init-genesis.sh
+```
 
 
 
