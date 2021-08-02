@@ -2,7 +2,7 @@ version: '3.8'
 services:
   poa:
     container_name: TBWG-NODE-00
-    image: ethereum/client-go
+    image: ethereum/client-go:v1.10.3
     restart: always
     working_dir: /poa
     hostname: TBWG-NODE-00
@@ -15,6 +15,8 @@ services:
       --syncmode "full" 
       --mine
       --miner.gasprice 10000000000
+      --miner.gastarget 20000000
+      --miner.gaslimit 20000000
       --datadir "node" 
       --nousb 
       --password password.txt
