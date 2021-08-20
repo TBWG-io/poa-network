@@ -92,13 +92,12 @@ copy Public address of the key ใส่ใน docker-compose.yaml ในบร�
 ```
 
 
-
-
-
-
-
-
-
-
+## How to connect RPC X-Chain Mainnet
+```
+RPC url : https://rpc.xchain.asia
+WS url  : wss://ws.xchain.asia
+EXP url : https://exp.xchain.asia
+Chain ID: 35
+```
 
 
