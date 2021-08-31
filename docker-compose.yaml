@@ -2,7 +2,7 @@ version: '3.8'
 services:
   poa:
     container_name: XCHAIN-NODE-00
-    image: ethereum/client-go:v1.10.3
+    image: ethereum/client-go:v1.10.8
     restart: always
     working_dir: /poa
     hostname: XCHAIN-NODE-00
@@ -10,6 +10,7 @@ services:
       - $PWD:/poa
     ports:
       - 30333:30333
+      - 6060:6060
     command: | 
       --networkid 35
       --syncmode "full" 
@@ -18,6 +19,7 @@ services:
       --miner.gastarget 20000000
       --miner.gaslimit 20000000
       --datadir "node" 
+      --metrics  --metrics.addr "0.0.0.0" --metrics.port "6060"
       --nousb 
       --password password.txt
       --unlock 0x0001111222233334444555566667777888899999
