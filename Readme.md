@@ -76,6 +76,7 @@ copy Public address of the key ใส่ใน docker-compose.yaml ในบร�
 |Check NodeInfo     | > admin.nodeInfo                                                      |
 |Add Singer         | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", true)  |
 |Remoce Signer      | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", false) |
+|Check Vote         | > clique.proposals                                                    |
 
 1 command-line
 ```
