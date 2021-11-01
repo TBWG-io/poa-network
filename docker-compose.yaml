@@ -2,7 +2,7 @@ version: '3.8'
 services:
   poa:
     container_name: XCHAIN-NODE-00
-    image: ethereum/client-go:v1.10.8
+    image: ethereum/client-go:v1.10.11
     restart: always
     working_dir: /poa
     hostname: XCHAIN-NODE-00
