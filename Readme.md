@@ -7,16 +7,16 @@
 |VM Spec  | Descriptions     |
 |---------|------------------|
 |OS       | Ubuntu 20.04 LTS |
-|CPU      |vCPU 8 Cores      |
-|RAM      |16 GB             |
-|DISK SSD | 200 GB           |
+|CPU      | vCPU 8 Cores     |
+|RAM      | 16 GB            |
+|DISK SSD | 500 GB           |
 
 # รายละเอียด Software Requirements
-| Software      | Version           |
-|---------------|-------------------|
-|docker         | 20.10.6 or higher |
-|docker-compose | 1.29.1 or higher  |
-|geth  | ethereum/client-go:v1.10.3 |
+| Software      |  Version           |
+|---------------|--------------------|
+|docker         |  20.10.6 or higher |
+|docker-compose |  1.29.1 or higher  |
+|geth  | ethereum/client-go:v1.10.14 |
 
 # Install docker and docker-compose
 ```
@@ -75,7 +75,7 @@ copy Public address of the key ใส่ใน docker-compose.yaml ในบร�
 |Add Peers Static   | > admin.addPeer("enode://a979fb575495b8d6db44f75@52.16.188.185:30303")|
 |Check NodeInfo     | > admin.nodeInfo                                                      |
 |Add Singer         | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", true)  |
-|Remoce Signer      | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", false) |
+|Remove Signer      | > clique.propose("0xd881234E73223d1623E0d56789942eA1c0B67890", false) |
 |Check Vote         | > clique.proposals                                                    |
 
 1 command-line
@@ -101,4 +101,7 @@ EXP url : https://exp.xchain.asia
 Chain ID: 35
 ```
 
+## Metamask Connect RPC X-Chain Mainnet
+
+![metamask-rpc-x-chain](pic/metamask-rpc.png)
 
