@@ -107,7 +107,7 @@ Chain ID: 35
 
 
 ## 8. Update Version GETH
-แก้ไขไฟล์ docker-compose.yaml บรรทัดที่ 5 image: ethereum/client-go:v1.10.11 ให้เปลี่ยนเป็น version ล่าสุดเช่น client-go:v1.10.14 เป็นต้น จากนั้นให้ save และทำการ pull images ใหม่และทำการ deploy
+แก้ไขไฟล์ docker-compose.yaml บรรทัดที่ 5 image: ethereum/client-go:v1.10.11 ให้เปลี่ยนเป็น version ล่าสุดเช่น ethereum/client-go:v1.10.14 เป็นต้น จากนั้นให้ save และทำการ pull images ใหม่และทำการ deploy
 ```
 # docker-compose pull
 # docker-compose up -d
